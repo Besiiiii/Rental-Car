@@ -1,0 +1,8 @@
+.head{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 150px;
+}
