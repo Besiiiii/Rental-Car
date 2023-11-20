@@ -21,7 +21,7 @@ export const Login = () => {
                 <FloatingLabel controlId="floatingPassword" label="Password" className="inpt" >
                 <Form.Control type="password" placeholder="Password" className="inp" />
                 </FloatingLabel>
-                <a href="" className="forgot">Forgot Your Password</a> </div>
+                <a href="/" className="forgot">Forgot Your Password</a> </div>
                 <div className="logdont btnsig">
                 <button className="loginbtn"><Link to='/' className="loginbtn">LOGIN</Link></button>
                 <div className="dont">

@@ -46,7 +46,7 @@
 .forgot{
     width: 20vw;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     text-decoration: none;
     color: #858585;
 }
@@ -130,7 +130,7 @@
     .pwbox{
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
         gap: 5px;
     }
     .logoja{
