@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import SignIn from './SignIn';
 import SignUp from './Signup';
+import Catalog from './Catalog';
 
 
 const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
@@ -20,6 +21,7 @@ root.render(
     <Route path='/' element={ <App /> }/>
     <Route path='/signin' element={ < SignIn />}/>
     <Route path='/signup' element={ < SignUp />}/>
+    <Route path='/catalog' element={ <Catalog/> }/>
     </Routes>
   </BrowserRouter>);
 
