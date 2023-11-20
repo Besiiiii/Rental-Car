@@ -1,3 +1,94 @@
-*{
-    border:1px solid red;
+.upper{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 2vh;
+    color: #36322D;
+    font-family: Quicksand;
+    font-weight: 500;
+}
+.upper p{
+    text-align: center;
+}
+.uppersc{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.uppersc button{
+    background-color: #ED7D31;
+    border: 0;
+    border-radius: 15px;
+    width: 250px;
+    height: 60px;
+    color: #36322D;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 20px;
+}
+.carform{
+    width: 315px;
+    height: 310px;
+    background: #36322D;
+    border-radius: 25px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: -1;
+}
+.car{
+    position: relative;
+    width: 325px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding-top: 7vh;
+}
+.car img{
+    z-index: 1;
+    width: 305px;
+    height: 151px;
+    margin-top: -49px;
+}
+.car .btnbook{
+    width: 165px;
+    padding: 8px;
+    background-color: #ED7D31;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 24px;
+}
+.car h2{
+    font-family: Quicksand;
+    font-size: 28px;
+    color: #fff;
+}
+.car h3{
+    font-family: Quicksand;
+    font-size: 24px;
+    color: #ED7D31;
+}
+.car a {
+    color: #fff;
+}
+.cars{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .cars{
+        justify-content: center;
+    }
 }
