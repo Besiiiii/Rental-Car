@@ -10,22 +10,22 @@
 .loginbox{
     display: flex;
     background: #F6F1EE;
-    width: 1000px;
-    height: 540px;
+    width: 55vw;
+    height: 59vh;
     border-radius: 20px;
     filter: drop-shadow(2px 0px 14.800000190734863px rgba(0, 0, 0, 0.25));
 }
 .left{
     background: #ED7D31;
-    height: 540px;
-    width: 402px;
+    height: 59vh;
+    width: 20vw;
     display: flex;
     align-items: center;
     border-radius: 20px 201px 201px 20px;
 }
 .logincar{
-    height: 375px;
-    width: 375px;
+    height: 20vh;
+    width: 20vw;
     object-fit: cover;
 }
 .right{
@@ -40,11 +40,11 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #111;
-    width: 400px;
+    width: 20vw;
     height: 70px;
 }
 .forgot{
-    width: 400px;
+    width: 20vw;
     display: flex;
     justify-content: end;
     text-decoration: none;
@@ -86,4 +86,56 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+.loginbtn:hover{
+    color: #FFF;
+}
+.logoja{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .left{
+        display: none;
+        visibility:hidden;
+    }
+    .right{
+        margin-left: 0;
+        gap: 4vh;
+    }
+    .loginbox{
+        width: 320px;
+        height: 550px;
+        justify-content: center;
+    }
+    .inp{
+        width: 240px;
+    }
+    .loginbtn{
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .btnsig{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forgot{
+        font-size: 13px;
+        width: 200px;
+    }
+    .pwbox{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5px;
+    }
+    .logoja{
+        visibility: visible;
+        width: 100px;
+        height: 100px;
+    }
 }

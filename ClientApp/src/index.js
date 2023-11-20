@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import App from './App';
 import SignIn from './SignIn';
+import SignUp from './Signup';
 
 
 const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
@@ -18,6 +19,7 @@ root.render(
     <Routes>
     <Route path='/' element={ <App /> }/>
     <Route path='/signin' element={ < SignIn />}/>
+    <Route path='/signup' element={ < SignUp />}/>
     </Routes>
   </BrowserRouter>);
 

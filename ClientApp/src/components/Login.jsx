@@ -11,20 +11,22 @@ export const Login = () => {
             <img src="images/LogInCar.png" alt="loginincar" className="logincar"/>
         </div>
         <div className="right">
-            <h1>WELCOME</h1>
+            <div className="d-flex flex-column align-items-center">
+            <img src="images/RentalCarLogo.png" alt="logo" className="logoja" />
+            <h1>WELCOME</h1></div>
             <FloatingLabel controlId="floatingInput" label="Username" className="inpt">
             <Form.Control type="username" placeholder="Your Username..." className="inp"/>
             </FloatingLabel>
-            <div>
+            <div className="pwbox">
                 <FloatingLabel controlId="floatingPassword" label="Password" className="inpt" >
                 <Form.Control type="password" placeholder="Password" className="inp" />
                 </FloatingLabel>
                 <a href="" className="forgot">Forgot Your Password</a> </div>
-                <div className="logdont">
+                <div className="logdont btnsig">
                 <button className="loginbtn"><Link to='/' className="loginbtn">LOGIN</Link></button>
                 <div className="dont">
                 <p>Don't have an account,</p>
-                <a href="" >Create here ! </a> </div></div>
+                <a href="/signup" >Create here ! </a> </div></div>
             </div>
         </div>
     </div>
