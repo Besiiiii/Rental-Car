@@ -48,7 +48,10 @@
     display: flex;
     justify-content: end;
     text-decoration: none;
-    color: #FFF;
+    color: #858585;
+}
+.forgot:hover{
+    color: #ff0000;
 }
 .inpt{
     text-decoration: none;
@@ -58,4 +61,29 @@
 .dont{
     display: flex;
     font-size: 12px;
+}
+.inpt .form-control,
+.inpt .form-control:focus {
+  background-color: transparent; 
+  border: none;
+  box-shadow: none; 
+  outline: none;
+  border-bottom: 1px solid #111;
+}
+
+.loginbtn{
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    background: #ED7D31;
+    text-decoration: none;
+    color: #F6F1EE;
+    font-size: 24px;
+    border: none;
+    font-weight: 600;
+}
+.logdont{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
