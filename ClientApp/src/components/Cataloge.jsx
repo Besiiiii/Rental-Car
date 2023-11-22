@@ -6,6 +6,7 @@ export const Cataloge = () => {
     const [showTypes, setShowTypes] = useState(false);
     const [selectedBrand, setSelectedBrand] = useState(null);
     const [selectedType, setSelectedType] = useState(null);
+    const [sortByPriceLow, setSortByPriceLow] = useState(false);
     
         const cars = [
             { brand: 'Volkswagen', model: 'Golf 7', type: 'Hatchback', price: 35, image: 'images/cars/Golf7.png' },
@@ -59,8 +60,16 @@ export const Cataloge = () => {
         setShowTypes(false);
     };
 
-    const filteredCars = cars.filter((car) => {
+    const toggleSortByPrice = () => {
+        setSortByPriceLow(!sortByPriceLow);
+    };
+
+    let filteredCars = cars.filter((car) => {
         return (!selectedBrand || car.brand === selectedBrand) && (!selectedType || car.type === selectedType);
+    });
+
+    filteredCars = [...filteredCars].sort((a, b) => {
+        return sortByPriceLow ? a.price - b.price : b.price - a.price;
     });
 
     return(
@@ -104,7 +113,9 @@ export const Cataloge = () => {
                     )}
                 </div>
 
-                <button>Low/High Price</button>
+                <button onClick={toggleSortByPrice}>
+                    {sortByPriceLow ? 'Sort By High Price' : 'Sort By Low Price'}
+                </button>
             </div>
             <div className="cars">
                 {filteredCars.map((car, index) => (
