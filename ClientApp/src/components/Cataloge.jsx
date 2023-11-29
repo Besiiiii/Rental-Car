@@ -94,9 +94,7 @@ export const Cataloge = () => {
                             </ul>
                         </div>
                     )}
-                </div>  
-
-                <button>View Available Cars</button>
+                </div> 
 
                 <div className='btnsort'>
                     <button onClick={toggleTypeList}>Sort By Type</button>
