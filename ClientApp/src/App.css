@@ -48,12 +48,17 @@
 }
 
 /* -------------------- Home Page CSS ------------------*/
-
+.homepage{
+    background-color: #F6F1EE;
+    z-index: -2;
+    height: 100%;
+    width: fit-content;
+}
 .firsts{
     margin-top: 107px;
     display: flex;
     height: 470px;
-    width: 100vw;
+    width: 99.14vw;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 6vw;
@@ -76,7 +81,7 @@
     background: #F4751F;
     opacity: 84%;
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    z-index: -1;
+    z-index: 0;
     position: absolute;
 }
 .explore{
@@ -118,8 +123,120 @@
     gap: 44px;
     align-items: center;
 }
+/* ~~~~~~~~~~~~~~~~~~~~ How it work section ~~~~~~~~~~~~~~~~~~~~*/
 
+.iconsats{
+    margin-top: 110px;
+    gap: 190px;
+}
+.iconsat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.howh4{
+    width: 181px;
+    font-size: 15px;
+    text-align: center;
+}
+.howh2{
+    width: 181px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.howworks h1{
+    font-weight: 700;
+}
+/*##################### Infos box ########################*/
 
+.infos{
+    margin-top: 100px;
+    width: 1172px;
+    height: 220px;
+    background: #ED7D31;
+    clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 91.87% 0%); 
+    gap: 130px;
+    display: flex;
+    border-bottom-right-radius: 25px ;
+}
+.infosc h2{
+    font-weight: 700;
+}
+.infosc{
+    text-align: center;
+    color: #F6F1EE;
+}
+
+/*...................... Best Deals .......................*/
+
+.bestdeals{
+    padding-top: 100px;
+}
+.bestdeals h1{
+    font-weight: 700;
+    text-align: center;
+}
+/* ,,,,,,,,,,,,,,,,,,,,, Mobile App Section ,,,,,,,,,,,,,, */
+.mobileapp{
+    width: 1172px;
+    height: 220px;
+    background: #ED7D31;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8.13% 100%);
+    position: absolute;
+}
+.mobileapps{
+    padding-top: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.telefonip{
+    width: 314px;
+    height: 314px;
+    margin-top: -120px ;
+    z-index: 2;
+}
+.mobileh{
+    text-align: center;
+    width: 490px;
+    z-index: 2;
+    color: #F6F1EE;
+}
+.store{
+    width: 194px;
+    height: 61px;
+    z-index: 2;
+}
+.mobilestuff{
+    z-index: 2;
+    display: flex;
+    margin-right: 150px;
+}
+.mobile-h-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-img img{
+    border-radius: 12px;
+}
+.mobile-img img:hover{
+    cursor: pointer;
+}
+
+/* ////////////////// Why Us /////////////////////*/
+.whyus{
+    padding-top: 150px;
+}
+.whyus h1{
+    text-align: center;
+    font-weight: 700;
+}
+.iconsat img{
+    height: 100px;
+}
 /** ================== Responsive ====================**/
 
 @media only screen and (max-width: 900px) {

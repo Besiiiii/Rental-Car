@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik');
 
-
+.maincl{
+    background-color: #F6F1EE;
+}
 .upper{
     width: 100vw;
     display: flex;
@@ -40,7 +42,7 @@
     background: #36322D;
     border-radius: 25px;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
 .car{
     position: relative;
@@ -52,6 +54,7 @@
     justify-content: center;
     gap: 2vh;
     padding-top: 7vh;
+    z-index: 1;
 }
 .car img{
     z-index: 1;
@@ -69,18 +72,22 @@
     font-family: Rubik;
     font-weight: 500;
     font-size: 24px;
+    z-index: 1;
 }
 .car h2{
     font-family: Rubik;
     font-size: 28px;
     color: #fff;
+    z-index: 1;
 }
 .car h3{
     font-family: Quicksand;
     font-size: 24px;
     color: #ED7D31;
+    z-index: 1;
 }
 .car a {
+    z-index: 1;
     color: #fff;
 }
 .cars{
