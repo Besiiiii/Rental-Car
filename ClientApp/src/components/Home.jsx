@@ -1,5 +1,5 @@
 import React  from "react"
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 export const Home = () => {
@@ -14,7 +14,7 @@ export const Home = () => {
                     business trip, or jut want the convenience of having a car
                       at your disposal, we’ve got covered.</p>
                       <div className="btnsfirsts">
-                      <button className="getcar">Get your car now </button>
+                      <Link to='/signin' className="getcar">Get your car now </Link>
                       <a href="/catalog" className="catalogbtnhome">See the catalog here </a>
                       </div>
             </div>
